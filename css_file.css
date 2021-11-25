@@ -1,0 +1,424 @@
+html,body,div,span,applet,object,blockquote,pre,a,abbr,iframe,h1,h2,h3,h4,h5,h6,
+p,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+html,
+input,
+select,
+textarea,
+button,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  background: rgb(228, 228, 228);
+  padding: 20px 0 0 0;
+  overflow: hidden;
+}
+
+div.boxy {
+  background: #b99c8d;
+  margin: 0px auto auto auto;
+  border-radius: 25px;
+  box-shadow: 0 7px 30px 20px rgba(199, 199, 199, 0.75);
+  transition: transform 0.3s ease-in;
+}
+
+div.boxy:hover {
+  transform: scale(1.02);
+}
+
+@media only screen and (min-width: 800px) {
+  div.boxy {
+    width: 50%;
+    height: 98%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  div.boxy {
+    width: 40%;
+    height: 95%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  div.boxy {
+    width: 35%;
+    height: 95%;
+  }
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  padding: 15px;
+  z-index: 5;
+  background: #8c497a;
+  border-radius: 15px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 0 2px 8px rgba(41, 10, 77, 0.5);
+}
+
+header input {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  font-size: 1.05rem;
+  height: 52px;
+  text-indent: 40%;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-top-right-radius: 28px;
+  border-bottom-right-radius: 28px;
+  border-radius: 21px;
+  float: left;
+  padding-right: 65px;
+  /* margin: 2px; */
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #fdfdfd;
+  transition: all 0.4s ease;
+}
+
+header input:focus {
+  background: rgba(245, 244, 246, 0.5);
+}
+
+header input::-moz-placeholder {
+  color: white;
+}
+
+header div#animee
+{
+  /*being used for mojs animation*/
+  height: 50px;
+  position: absolute;
+  right: 15px;
+  width: 50px;
+}
+
+header button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border: 0px;
+  outline: 0px;
+  border-color: transparent;
+  outline-style: 0px;
+  border-radius: 20%;
+  background: rgb(252, 223, 223);
+  cursor: pointer;
+  z-index: 1;
+  box-shadow: -4px 4px 7px rgba(41, 10, 77, 0.5);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  transition: all 0.1s ease;
+}
+
+header button:hover {
+  box-shadow: none;
+  transform: scale(0.8);
+}
+
+header button:active {
+  background: rgba(252, 250, 255, 0.3);
+  outline: none;
+  outline-width: 0;
+  outline-color: transparent;
+}
+
+
+header button svg {
+  width: 40%;
+  height: 40%;
+  position: relative;
+  top: 5%;
+  fill: #fa9c9c;
+  z-index: 5;
+}
+
+header button.rotate {
+  transform: rotate(180deg);
+  transition: all 0.3s ease;
+}
+
+div.container {
+  width: 100%;
+  float: left;
+}
+
+ul.tool {
+  list-style: none;
+}
+
+ul.tool li {
+  background: rgb(250, 215, 215);
+  color: #b43f3f;
+  padding: 15px;
+  margin: 15px 15px 15px 15px;
+  border-radius: 8px 0 8px 0;
+  box-shadow: -2px 2px 4px rgba(41, 10, 77, 0.5);
+  transition: all 0.2s ease-in;
+  transition: opacity 0.3s ease-out;
+  transition: opacity 0.2s ease-in;
+  /* transition: height 0.3s ease-in; */
+  max-height: 50px;
+  opacity: 1;
+  position: relative; /* so we can absolute the buttons*/
+}
+
+ul.tool li.deleted,
+ul.tool li.invisible {
+  opacity: 0;
+}
+
+ul.tool li:hover {
+  transform: scale(0.995);
+  box-shadow: none;
+  background: rgb(255, 241, 219);
+  background: -moz-linear-gradient(
+    left,
+    rgb(255, 231, 194),
+    rgb(255, 244, 228)
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgb(255, 231, 194),
+    rgb(255, 244, 228)
+  );
+  background: -o-linear-gradient(left, rgb(255, 231, 194), rgb(255, 244, 228));
+}
+
+ul.tool li:last-of-type {
+  margin-bottom: 0;
+}
+
+ul.tool li .buttons {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  top: 0;
+  right: -1%;
+}
+
+ul.tool li .buttons button {
+  width: 30px;
+  height: 30px;
+
+  margin: 10px 0 0 0;
+
+  float: left;
+  background: none;
+  position: relative;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+ul.tool li .buttons button:last-of-type::before {
+  content: " ";
+  width: 1px;
+  height: 35px;
+  background: #edf0f1;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: -16;
+}
+
+ul.tool li .buttons button svg {
+  width: 20px;
+  height: 20px;
+}
+
+ul.tool li .buttons button svg .fill {
+  transition: all 0.4s ease-out;
+}
+
+ul.tool li .buttons button.deleteButton svg .fill {
+  fill: #c0cecb;
+}
+
+ul.tool li .buttons button.checkButton svg .fill {
+  fill: rgb(47, 167, 77);
+}
+
+ul.tool li .buttons button.checkButton svg .noFill {
+  fill: none;
+}
+
+ul.tool:not(#donee) li .buttons button.checkButton:hover svg .noFill,
+ul.tool#donee li .buttons button.checkButton svg .noFill {
+  fill: rgb(136, 238, 161);
+}
+
+ul.tool:not(#donee) li .buttons button.checkButton:hover svg .fill,
+ul.tool#donee li .buttons button.checkButton svg .fill {
+  fill: #fff;
+}
+
+ul.tool li .buttons button.deleteButton:hover svg .fill {
+  fill: rgb(252, 183, 183);
+}
+
+hr.divider {
+  width: 50%;
+  margin: 20px auto 5px auto;
+}
+
+#donee {
+  opacity: 0.5;
+}
+
+#checkAnimateDiv {
+  width: 1px;
+  height: 1px;
+  z-index: -10;
+  position: relative;
+  bottom: 12px;
+  left: 15px;
+}
